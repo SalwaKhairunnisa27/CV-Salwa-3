@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css">
+  <title>Portofolio Pribadi - Salwa Khairunnisa</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <a href="#" class="logo">MyPortofolio</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-menu">
+        <li class="active"><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="home" aria-label="About Me">
+      <div class="home-info">
+        <h1>Salwa Khairunnisa</h1>
+        <h2>College Student | Learner</h2>
+        <p>Seorang mahasiswa program studi Sistem dan Teknologi Informasi yang tertarik dengan Artificial Intelligence, Data Analyst, dan Inovasi Digital.</p>
+        <div class="btn-sci">
+          <a href="#" class="btn">More Info</a>
+          <div class="sci" aria-label="Social Media Links">
+            <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="#" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+      </div>
+     <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="assets/2-removebg-preview.png" alt="MyPotret">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-label="Education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <img src="assets/profil man19.webp" alt="Logo MAN 19 Jakarta" class="school-logo" />
+          <h3>MAN 19 Jakarta</h3>
+          <time class="year" datetime="2020-2023">2020 - 2023</time>
+          <p>Peminatan Matematika dan Ilmu Alam</p>
+        </article>
+        <article class="timeline-item">
+          <img src="assets/profil UNJ.jpg" alt="Logo Universitas Negeri Jakarta" class="school-logo" />
+          <h3>Universitas Negeri Jakarta</h3>
+          <time class="year" datetime="2024-2028">2024 - 2028 (expected)</time>
+          <p>Sistem dan Teknologi Informasi</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-label="Experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Anggota OSIS Seksi Kewarganegaraan</h3>
+          <time class="year" datetime="2021-2022">2021 – 2022</time>
+          <p>MAN 19 Jakarta</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Anggota Karya Ilmiah Remaja</h3>
+          <time class="year" datetime="2021-2023">2021 – 2023</time>
+          <p>MAN 19 Jakarta</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Sekretaris Sahabat Muslim Fakultas Teknik</h3>
+          <time class="year" datetime="2024-2025">2024 - 2025 (aktif)</time>
+          <p>Universitas Negeri Jakarta</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Staff Dept. Islamic Mentoring Centre FSI Al-Biruni</h3>
+          <time class="year" datetime="2025-2026">2025 - 2026 (aktif)</time>
+          <p>Universitas Negeri Jakarta</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">HTML &amp; CSS</div>
+        <div class="skill-item">Canva</div>
+        <div class="skill-item">Microsoft Word &amp; Excel</div>
+        <div class="skill-item">Mathematic</div>
+        <div class="skill-item">Problem Solving</div>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+      <h2>Contact</h2>
+      <p>Telp: <a href="tel:+6285697335298">+62 85697335298</a></p>
+      <p>Email: <a href="mailto:salwaprem7@email.com">salwaprem7@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/salwa-khairunnisa" target="_blank" rel="noopener noreferrer">linkedin.com/in/salwa-khairunnisa</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Salwa Khairunnisa | Made for Project</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", () => {
+      const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+      hamburger.setAttribute("aria-expanded", !expanded);
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
